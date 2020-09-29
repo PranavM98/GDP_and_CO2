@@ -5,7 +5,7 @@ data=pd.read_csv('https://media.githubusercontent.com/media/nickeubank/MIDS_Data
 subset=data[['Mortality rate, infant (per 1,000 live births)', 'GDP per capita (constant 2010 US$)', 'Country Name']]
 
 
-plt.scatter(subset['GDP per capita (constant 2010 US$)'],subset['Mortality rate, infant (per 1,000 live births)'])
+plt.scatter(subset['GDP per capita (constant 2010 US$)'],subset['Mortality rate, infant (per 1,000 live births)'],color='red')
 plt.xlabel("GDP")
 plt.ylabel("Mortality Rate")
 plt.show()
